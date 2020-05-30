@@ -9,6 +9,8 @@ WORKDIR /app/videos
 COPY package.json .
 RUN yarn install
 
+#COPY . . = copy everything
+#first . means source folder, second . means destination
 COPY . .
 
 EXPOSE 3000
